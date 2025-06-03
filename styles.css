@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #21a5d5;
+  --main-para-color: #363c42;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.h-parent {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  width: 70%;
+  margin: auto;
+}
+
+.h-left p {
+  color: white;
+}
+
+.h-left,
+.email,
+.location {
+  gap: 0.8rem;
+  display: flex;
+}
+
+.h-right {
+  display: flex;
+  gap: 1rem;
+  color: #64d6ff;
+}
+
+.n-parent {
+  box-shadow: 0 3px 10px 3px lightgray;
+  padding: 0.4rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.menu-items {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.contact-btn button {
+  padding: 0.6rem 1rem;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  gap: 1rem;
+}
+
+.bi-list {
+  font-size: 2rem;
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  nav,
+  header {
+    width: 85%;
+  }
+}
+@media (max-width: 1170px) {
+  nav,
+  header {
+    width: 95%;
+  }
+}
+@media (max-width: 1060px) {
+  .menu-items {
+    display: none;
+  }
+  .bi-list {
+    display: block;
+  }
+}
+@media (max-width: 630px) {
+  .h-left {
+    display: none;
+  }
+}
+@media (max-width: 440px) {
+  .contact-btn {
+    display: none;
+  }
+}
