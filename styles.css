@@ -78,15 +78,108 @@ nav {
   display: none;
 }
 
+.hero {
+  display: flex;
+  width: 70%;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.hero p {
+  font-size: 1.4rem;
+  color: var(--main-para-color);
+}
+
+.demo-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 60px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.hero-left,
+.hero-right {
+  width: 100%;
+}
+
+.solutions {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.s-cards {
+  display: flex;
+  margin: 3rem auto;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.partners {
+  text-align: center;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.partners h2 {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.partners p {
+  font-size: 1.5rem;
+  color: var(--main-para-color);
+}
+
+.services {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.service-top,
+.service-bottom {
+  display: flex;
+  width: 80%;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.service-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 1520px) {
+  .service-bottom,
+  .service-top {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 @media (max-width: 1440px) {
   nav,
-  header {
+  header,
+  .hero {
     width: 85%;
   }
 }
 @media (max-width: 1170px) {
   nav,
-  header {
+  header,
+  .hero {
     width: 95%;
   }
 }
@@ -97,14 +190,54 @@ nav {
   .bi-list {
     display: block;
   }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .partners h2 {
+    font-size: 2rem;
+  }
+  .partners p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 630px) {
   .h-left {
     display: none;
   }
+
+  .s-cards {
+    width: 90%;
+  }
+
+  .partners {
+    width: 80%;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media (max-width: 440px) {
   .contact-btn {
     display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .s-cards {
+    overflow-x: scroll;
+    gap: 3rem;
   }
 }
