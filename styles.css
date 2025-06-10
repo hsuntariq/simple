@@ -161,6 +161,119 @@ nav {
   color: black;
 }
 
+.ecom {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.ecom-heading {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.ecom-heading h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: 1rem;
+}
+
+.ecom-heading h2:nth-of-type(1) {
+  color: var(--primary-color);
+  border: 1px solid lightgray;
+  border-bottom: 1px solid white;
+}
+
+.box {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  margin-top: -1px;
+}
+
+.power {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.power p {
+  color: #363c42;
+  font-size: 1.4rem;
+}
+.power h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.android {
+  display: flex;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.a2 {
+  flex-direction: row-reverse;
+}
+
+.a-left h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
+.a-left p:nth-of-type(1) {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #363c42;
+}
+.a-left p:nth-of-type(2) {
+  font-size: 1.3rem;
+  color: #363c42;
+}
+
+.a-left,
+.a-right {
+  width: 100%;
+}
+
+.operations {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  color: white;
+}
+
+.operations h2:first-child {
+  text-align: center;
+}
+
+.f-left,
+.f-right {
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  width: 70%;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.highlight {
+  margin: 2rem 0;
+}
+
+.features ol {
+  margin-left: 2rem;
+}
+
+.demo {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 40px;
+  margin: 2rem 0 2rem 4rem;
+}
+
 @media (max-width: 1520px) {
   .service-bottom,
   .service-top {
@@ -203,12 +316,50 @@ nav {
   }
 }
 
+@media (max-width: 930px) {
+  .android,
+  .power,
+  .features {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .box {
+    display: none;
+  }
+
+  .ecom-heading h2 {
+    border: 1px solid lightgray !important;
+  }
+  .ecom-heading {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 870px) {
   .hero h1 {
     font-size: 1.5rem;
   }
   .hero p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 790px) {
+  .android {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    text-align: center;
+  }
+  .f-left {
+    text-align: left;
+  }
+
+  .a2 {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 630px) {
@@ -224,6 +375,10 @@ nav {
     width: 80%;
   }
 
+  .power {
+    text-align: center;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
@@ -232,6 +387,13 @@ nav {
 @media (max-width: 440px) {
   .contact-btn {
     display: none;
+  }
+
+  .android p {
+    font-size: 1rem !important;
+  }
+  .android h2 {
+    font-size: 1.4rem !important;
   }
 }
 
